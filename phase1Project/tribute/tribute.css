@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+background-color: #EEEEEE;
+margin: 30px;
+font-family: sans-serif;
+font-weight: 300;
+text-align: center;
+box-sizing: border-box;
+}
+
+#img-container img{
+    width: 100%;
+    height: auto; /*maintain aspect ration*/
+
+}
+#img-container img{
+    width: 100%;
+    height: auto; /*maintain aspect ration*/
+}

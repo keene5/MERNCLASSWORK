@@ -1,6 +1,5 @@
 body{
   padding-top: 60px;
-  background-color: aqua;
 }
 .card {
   border: 1px solid #ccc;
@@ -24,8 +23,7 @@ body{
 .navbar-custom {
   border: 3px solid #ccc;
   padding-bottom: 30px;
-  background-color: blue;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 
 .row1 {
@@ -54,7 +52,20 @@ font-size: large;
 .logo{
   padding-left: 20px;
 }
-.title{color: darkred;
-text-decoration: brown;
+.title{
+  color: darkred;
 font-family: cursive;
-font-size: xx-large;}
+font-size: x-large;
+font-weight: 600;
+}
+
+@media (max-width: 900px){
+  .title{
+      font-size: medium;}
+      .logo{display: none;}
+      #hamburg{
+        margin-left: 160px;
+      }
+
+  }
+

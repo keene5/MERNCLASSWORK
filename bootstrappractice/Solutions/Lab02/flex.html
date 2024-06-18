@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Bootstrap Flex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+  <style>
+    .red {background-color: lightcoral}
+    .blue {background-color: lightblue}
+    .green {background-color: lightgreen}
+    .grey {background-color: lightgray}
+  </style>
+</head>
+
+<body>
+
+  <div class="d-md-flex flex-row grey">
+    <div class="p-2 red">Left</div>
+    <div class="p-2 blue">Center</div>
+    <div class="p-2 green">Right</div>
+  </div>
+  <p/>
+
+  <div class="d-md-flex flex-row-reverse grey">
+    <div class="p-2 red">Left</div>
+    <div class="p-2 blue">Center</div>
+    <div class="p-2 green">Right</div>
+  </div>
+  <p />
+  <div class="d-md-flex justify-content-between align-self-end grey">
+    <div class="p-2 red">Left</div>
+    <div class="p-2 blue">Center</div>
+    <div class="p-2 green">Right</div>
+  </div>
+  <p />
+  <div class="d-md-flex grey">
+    <div class="p-2 red flex-grow-1">Left</div>
+    <div class="p-2 blue">Center</div>
+    <div class="p-2 green flex-grow-1">Right</div>
+  </div>
+  <p />
+  <div class="d-md-flex grey">
+    <div class="p-2 red">Left</div>
+    <div class="p-2 blue">Center</div>
+    <div class="p-2 green flex-grow-1">Right</div>
+  </div>
+  <p />
+  <div class="d-md-flex grey">
+    <div class="p-2 red mr-auto">Left</div>
+    <div class="p-2 blue">Center</div>
+    <div class="p-2 green">Right</div>
+  </div>
+
+</body>
+
+</html>

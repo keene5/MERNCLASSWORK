@@ -1,0 +1,6 @@
+
+
+.custom-card .card-img-top{
+    max-height: 600px;
+    object-fit: cover;
+}

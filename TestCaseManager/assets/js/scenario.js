@@ -6,8 +6,11 @@ class Scenario {
   }
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var addScenarioLink = document.getElementById("add-scenario-link");
+  let hamburgerMenuLink = document.getElementById("hamburger-button");
   var viewScenariosLink = document.getElementById("view-scenarios-link");
   var dashboardLink = document.getElementById("dashboard-link");
   var scenarioForm = document.querySelector(".scenario-form");
@@ -26,7 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
       event.returnValue = "";
     }
   });
+
+
 // some comment
+
+  addScenarioLink.addEventListener("click", function (event) {
+    console.log("event clicked");
+    event.preventDefault();
+    scenarioForm.style.display = "block";
+    //scenarioForm.classList.toggle('hidden');
+    addScenarioLink.style.display = "none";
+    viewScenariosLink.style.display = "none";
+    dismissTableLink.style.display = "none";
+  });
+
+  hamburgerMenuLink.addEventListener("click", function (event) {
+    console.log("hamburger clicked");
+    // event.preventDefault();
+    const menu = document.querySelector('.navbar-collapse');
+  menu.classList.toggle('show');
+  });
 
   addScenarioLink.addEventListener("click", function (event) {
     console.log("event clicked");

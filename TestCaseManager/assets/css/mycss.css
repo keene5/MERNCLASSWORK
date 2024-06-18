@@ -4,9 +4,6 @@ body {
 
 }
 
-.container {
-  /* justify-content: start; */
-}
 
 #navbox {
   display: flex;
@@ -28,7 +25,7 @@ body {
 
 .nav-link:hover {
   text-decoration: underline;
-  text-decoration-color: aquamarine;
+  text-decoration-color: black;
 }
 
 ul.navbar li a:hover {
@@ -94,6 +91,7 @@ h1 {
 }
 .nav-link{
   text-decoration-color: blue;
+
 }
 
 

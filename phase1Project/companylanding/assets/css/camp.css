@@ -1,0 +1,71 @@
+body{
+  padding-top: 60px;
+}
+.card {
+  border: 1px solid #ccc;
+  margin-right: 20px;
+
+}
+.navbar {
+  border: 1px solid #ccc; /* Adds border around the navbar */
+  background-size: cover; /* Adjusts background image size */
+  background-color: transparent
+}
+
+/* .nav {
+  background-color: transparent
+} */
+.navbar-brand img {
+  height: 30px; /* Adjust the logo height as desired */
+  margin-right: 10px; /* Adjust the spacing between logo and title as desired */
+}
+
+.navbar-custom {
+  border: 3px solid #ccc;
+  padding-bottom: 30px;
+  padding-right: 5px;
+}
+
+.row1 {
+  padding-top: 30px;
+  margin-top: 60px;
+}
+.custom-image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.custom-slideshow{
+  padding: 30px;
+}
+.container{
+  background-color: aqua;
+}
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+font-size: large;
+}
+.logo{
+  padding-left: 20px;
+}
+.title{
+  color: darkred;
+font-family: cursive;
+font-size: x-large;
+font-weight: 600;
+}
+
+@media (max-width: 900px){
+  .title{
+      font-size: medium;}
+      .logo{display: none;}
+      #hamburg{
+        margin-left: 160px;
+      }
+
+  }
+

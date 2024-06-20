@@ -3,15 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+body{
+    background-color: aqua;
+
+}
+
+
 
 #main{
-background-color: #EEEEEE;
-margin: 30px;
-font-family: sans-serif;
-font-weight: 300;
 text-align: center;
-box-sizing: border-box;
 }
 
 #img-container img{
@@ -23,3 +25,171 @@ box-sizing: border-box;
     width: 100%;
     height: auto; /*maintain aspect ration*/
 }
+
+.picture-row {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #000;
+
+
+}
+
+.picture {
+    flex:1;
+ 
+ }
+
+.picture:first-child {
+   flex:2;
+
+}
+.picture-row img {
+max-width: 100%;
+    
+}
+
+.intro-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: px solid #000;
+}
+.black{
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #000;
+    background-color: #000;
+    height: 100px;
+}
+.pic1{
+    background-image: url("eddie.webp");
+    width: 100%;
+    height: 100%;
+    
+}
+.pic2{
+    background-image: url("eddie3.webp");
+}
+
+.picture{
+   background-size: cover;
+   background-position: center;
+   width: 400px;
+   height: 400px;
+   background-repeat: no-repeat;
+    
+}
+
+
+  #face-img{
+    max-width: 75px;
+    height: auto;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .navbar-logo img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+}
+.achievement-list {
+   
+    align-items: center;
+  }
+  
+  .achievement-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  tbody{
+    border: 5px solid #000;
+    border-radius: 10px;
+    background-color: yellowgreen;
+  }
+
+  
+  .achievement-table td {
+    padding: 10px;
+    text-align: left;
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .table-wrapper {
+  max-height: 240px; /* Adjust height as needed */
+  overflow-y: scroll;
+}
+  
+  .achievement-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .achievement-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  th, td{
+    word-wrap: break-word;
+    max-width: 400px;
+    padding: 5px;
+
+  }
+  .data{
+    background-color: yellowgreen;
+  }
+  #wins{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+
+  
+
+
+  @media (max-width: 767px) {
+    th, td{
+
+        max-width: 300px;
+
+    
+      }
+      .pic2{
+        display: none;
+      }
+
+      .achievement-table {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+      }
+    .picture {
+        flex:1;
+     
+     }
+    
+    .picture:first-child {
+       flex:1;
+    
+    }
+
+  }

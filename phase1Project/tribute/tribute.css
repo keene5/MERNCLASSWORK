@@ -33,6 +33,28 @@ text-align: center;
 
 
 }
+.merit-row{
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #000;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+
+
+}
+.merit{
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .picture {
     flex:1;
@@ -111,8 +133,25 @@ max-width: 100%;
   .navbar-link:hover {
     text-decoration: underline;
   }
-}
-.achievement-list {
+  bullet{
+
+    position: relative;
+    /* padding-right: 30px; */
+    align-items: center;
+
+  }
+
+  .bullet::before{
+    content: "\2022";
+    position: relative;
+    padding-right: 20px;
+   align-content: center;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+/* .achievement-list {
    
     align-items: center;
   }
@@ -137,7 +176,7 @@ max-width: 100%;
   }
 
   .table-wrapper {
-  max-height: 240px; /* Adjust height as needed */
+  max-height: 240px; 
   overflow-y: scroll;
 }
   
@@ -160,28 +199,28 @@ max-width: 100%;
   #wins{
     padding-top: 50px;
     padding-bottom: 30px;
-  }
+  } */
 
 
   
 
 
   @media (max-width: 767px) {
-    th, td{
+    /* th, td{
 
         max-width: 300px;
 
     
-      }
+      } */
       .pic2{
         display: none;
       }
 
-      .achievement-table {
+      /* .achievement-table {
         display: flex;
         justify-content: start;
         width: 100%;
-      }
+      } */
     .picture {
         flex:1;
      
@@ -191,5 +230,5 @@ max-width: 100%;
        flex:1;
     
     }
-
   }
+  

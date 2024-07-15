@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // some comment
 
   addScenarioLink.addEventListener("click", function (event) {
+    const scenariosFromDb = getScenariosFromDb();
     console.log("event clicked");
     event.preventDefault();
     scenarioForm.style.display = "block";
@@ -172,3 +173,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+function getScenariosFromDb(){
+
+  fetch('http://localhost:8081/items',{
+   method: 'GET',
+  headers: {
+    // Do not add headers unless changing CORS policy to allow them
+    // 'Content-Type': 'application/json',
+    // 'Authorization': 'Bearer YourAccessToken'
+  }})
+    .then(response => response.json())
+    .then(data => {
+      console.log('this is your api data' + data[0].description);
+      return data;
+    })
+    .catch(error => {
+      console.log('Error:', error);
+    });
+}

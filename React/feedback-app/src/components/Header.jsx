@@ -21,11 +21,9 @@ function Header({
   )
 }
 
-
 Header.propTypes = {
     text: PropTypes.string,
     bgColor: PropTypes.string
 }
-
 
 export default Header
